@@ -1,0 +1,781 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.grilla {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* Grilla simulada tipo Bootstrap */
+.container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100%;
+  padding: 0 5%;
+  align-items: center;
+}
+
+.hero-texto {
+  grid-column: 1 / span 6;
+  padding: 50px;
+  border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.hero-texto h1 {
+  font-size: 35px;
+   font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #2f2f2f;
+  margin-bottom: 36px;
+    padding: 0px;
+}
+
+.hero-texto p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+    padding: 0px;
+}
+
+.boton-naranja {
+  background-color: #f4641c;
+  color: white;
+  padding: 12px 40px;
+  
+  font-weight: bold;
+  font-size: 1rem;
+ 
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 180px;
+}
+
+.boton-naranja:hover {
+  background-color: #d94f0f;
+}
+
+/* Sección Beneficios */
+.beneficios {
+  position: relative;
+  padding-top: 50px;
+  margin-top: 1,5px; /* Superpone los cards con el hero */
+}
+
+.fondo-rectangulo {
+  background-color: #EBE8D8;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 5%;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.card {
+   margin: 15px;
+  background-color: #d4c7bc;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #2f2f2f;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #2f2f2f;
+}
+.beneficios-extra {
+  padding: 100px 5% 60px;
+  text-align: center;
+  background-color: #EBD189;
+}
+
+.beneficios-extra h2 {
+   font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+.beneficios-extra p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.beneficio-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+  
+ 
+}
+
+
+.linea-curva {
+  position: absolute;
+  height: 80px;
+  z-index: 4;
+}
+
+.linea1 {
+  top: 20px;
+  left: 250px;
+  width: 25%;
+}
+
+.linea2 {
+  top: 20px; /* ajusta según la posición del siguiente ícono */
+  left: 670px;
+  width: 25%;
+}
+
+
+.item {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.icono-placeholder {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-placeholder img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+
+
+.item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.texto h4 {
+  font-size: 2rem; /* ajusta tamaño según necesidad */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111;
+}
+.texto h5 {
+  font-size: 2rem; /* ajusta tamaño según necesidad */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #222;
+  text-align: left; /* alineación izquierda */
+  margin-bottom: 15px; /* espacio entre párrafos */
+}
+.intro-cocina {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.intro-cocina::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* se adapta automáticamente al contenido */
+  
+  z-index: 0;
+}
+
+.contenido {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espacio entre texto e imagen */
+  flex-wrap: wrap; /* Para que en pantallas chicas se acomode en columna */
+}
+
+.texto {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #222;
+
+}
+
+.texto strong {
+  font-weight: 700;
+}
+
+.imagen {
+  flex: 1;
+  text-align: right;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 500px;
+  transform: rotate(-4deg);
+  
+  border-radius: 20px;
+}
+
+.intro-pros {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #fff;
+  z-index: 1;
+}
+.intro-pros:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* se adapta automáticamente al contenido */
+  background-color: #DADADA;
+  z-index: 0;
+}
+.contenido2 {
+   position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espacio entre texto e imagen */
+  flex-wrap: wrap; /* Para que en pantallas chicas se acomode en columna */
+}
+
+
+.imagen2 {
+  flex: 1;
+  text-align: right;
+}
+
+.imagen2 img {
+  width: 100%;
+  max-width: 500px;
+  transform: rotate(-4deg);
+ 
+  border-radius: 20px;
+}
+
+ .opiniones-section {
+      background-color: #E4A27D;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .opiniones-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+       font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+   .opiniones-section {
+  background-color: #e8a374;
+  padding: 50px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.opiniones-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.opiniones-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.opiniones-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.opinion-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex-shrink: 0; 
+  padding: 40px; /* Espacio hacia adentro */
+  box-sizing: border-box;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.usuario img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nombre-ubicacion {
+  font-size: 0.9rem;
+}
+
+.nombre-ubicacion strong {
+  display: block;
+  font-weight: bold;
+}
+
+.comentario {
+  font-size: 0.95rem;
+  color: #333;
+}
+ /* Contenedor principal que centra todo */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Estilo del formulario */
+.form-contenedor {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-contenedor p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form-contenedor p span {
+  color: #F27922;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #F27922;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #d96513;
+}
+.grilla {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.redes-footer {
+  background-color: #ec6a24; /* naranja */
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.redes-footer h2 {
+  font-size: 1.6rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.iconos-redes img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.iconos-redes a:hover img {
+  transform: scale(1.1);
+}
+ .gratitud {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 3px solid #f2b705;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+  display: none;
+}
+
+.gratitud h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gratitud p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+
+.gratitud .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.hero-mobile {
+  display: none; /* oculto por defecto */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* aseguramos que ocupe todo el alto */
+  z-index: 1;
+}
+.hero-mobile img {
+  width: 100%;
+  height: auto; /* mantiene la proporción */
+  display: block;
+}
+/* Texto encima */
+.hero-texto {
+  position: relative;
+  z-index: 2; /* asegura que esté por encima de las imágenes */
+  text-align: center;
+  color: #fff; /* o el color que necesites */
+  padding: 2rem;
+}
+.logo-desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo-mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+ 
+   .hero-texto {
+  padding: 0 0px;
+  max-width: 100%;
+    text-align: center;
+  }
+  
+  .linea-curva {
+    display: none;
+  }
+
+
+   
+
+  .hero-texto p {
+    font-size: 1rem;
+     margin-top: -30px;
+  } 
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+    .beneficio-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 100%;
+    position: relative;
+    flex-direction: row;
+  }
+
+ .icono-placeholder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .icono-placeholder img {
+    width: 24px;
+    height: 24px;
+  }
+
+
+    .item-content {
+    flex: 1;
+  }
+
+  .item-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .item-content p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+
+  /* Mantén visibles las líneas curvas */
+   .linea-curva {
+    display: none;  /* ocultar los SVG que no queremos en mobile */
+  }
+
+  .linea-vertical {
+    width: 40px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
+.hero-bg {
+    display: none; /* ocultar imagen grande */
+  }
+
+  .hero-mobile {
+    display: block; /* mostrar imágenes móviles */
+  }
+
+  .hero-mobile img {
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    position: absolute; /* flotar sobre fondo1mobil */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* solo cubrir parte superior, ajústalo si es necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .fondo-mobil-1 {
+    position: relative;
+    z-index: 1;
+  }
+
+  .fondo-mobil-2 {
+    position: relative;
+    z-index: 0;
+  }
+ .hero-texto h1 {
+    font-size: 23px;
+      margin-top: -60px;  /* AÑADIDO para bajarlo */
+
+}
+ .contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* opcional, si querés centrar solo en mobile */
+  }
+
+  .texto {
+    order: 1;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left; /* mantiene párrafos alineados a la izquierda */
+  }
+
+  .imagen {
+    order: 2;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .imagen img {
+    max-width: 90%;
+    height: auto;
+  } .contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* opcional, si querés centrar solo en mobile */
+  }
+
+  .texto {
+    order: 1;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left; /* mantiene párrafos alineados a la izquierda */
+  }
+
+  .imagen {
+    order: 2;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .imagen img {
+    max-width: 90%;
+    height: auto;
+  }
+  .contenido2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen2 {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .texto {
+    order: 1;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .imagen2 img {
+    max-width: 90%;
+    height: auto;
+  }
+}
